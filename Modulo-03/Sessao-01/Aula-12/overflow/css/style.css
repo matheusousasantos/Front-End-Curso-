@@ -1,0 +1,23 @@
+
+
+html, body{
+	height: 100%;
+}
+
+.box{
+	width: 300px; /* Definirá a largura */
+	height: 200px;
+	margin: 0 auto; /* Coloca o objeto no centro */
+	background: grey;
+	overflow-x: auto;  /* Definirá o que será feito se o tamanho da nossa div for ultrapassado */
+	/* NO caso do hidden será escondido tudo que ultrapassar */
+	/* NO caso do auto será criado uma scroll bar */
+	/* NO caso do visible mostra o resto fora */
+}
+
+.box p{
+	width: 500px; /* Aumenta a largura do paragrafo */
+}
+
+
+/* OBS: Nos componentes a altura é definida automaticamente dependendo dos tamanho do seu tamanho */

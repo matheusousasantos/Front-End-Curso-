@@ -1,0 +1,25 @@
+
+
+html, body{
+	height: 100%;
+}
+
+.box{
+	width: 300px;
+	height: 200px;
+	margin: 0 auto; 
+	display: none; /*O componente some da tela*/
+	background: grey;
+	overflow-x: auto;  
+
+.box2{
+	width: 300px; 
+	height: 200px;
+	margin: 0 auto; 
+	background: grey;
+	overflow-x: auto;  
+}
+
+.box p, .box2 p{
+	width: 500px; 
+}
