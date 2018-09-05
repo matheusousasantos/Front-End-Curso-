@@ -1,0 +1,18 @@
+html, body{
+	height: 100%;
+}
+
+.box{
+	height: 400px;
+	width: 400px;
+	background: grey;
+}
+
+.box span{
+	display: inline-block; /* Para poder setar as dimensões*/
+	height: inherit; /* Herda os valores do pai */
+	width: inherit;
+	background: red;
+}
+
+/* OBS: Somente com o display: inline-block poderá setar as dimesões*/
