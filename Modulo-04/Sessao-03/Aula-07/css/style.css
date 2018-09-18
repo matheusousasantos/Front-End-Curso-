@@ -1,0 +1,65 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+ul{
+	list-style-position: inside; /* Mostra as linhas com uma bola no início */
+}
+
+ul li:nth-of-type(2) { /* atacar uma linha específica levando em consideração seu tipo */
+		color: green;
+}
+
+ul li:nth-child(4) { /* atacar uma linha específica 
+	não levando em consideração seu tipo. Leva em consideração os filho do UL (child) */
+		color: red;
+}
+
+.box {
+	width: 100%;
+}
+
+.box > div {
+	box-sizing: border-box;
+	float: left; /* Os item vão para esquerda */
+	width: 33.3%;/* Largura com 1/3 do .box */
+	height: 400px;
+	background-color: green;
+	border: 1px solid black; /*1 px a mais da borda pode causar 1 px a mais no width que altera
+	o tamanho do .item, posso resolver colocando dentro de um border-box, a borda passa a crescer 
+	pra dentro e não pra fora onde não será aterado o objeto (box-sizing: border-box)*/
+}
+
+/* PEGADO O ULTIMO ELEMENTO DO MESMO TIPO **
+.box div:last-of-type { /* Pegue o ultimo objeto e coloque o fundo azul
+		background-color: blue;
+}
+*/
+
+/* PEGANDO UM PARARÁGRAFO(p) DENTRO DE UMA DIV A PARTIR DO BOX */
+.box div:last-of-type p { /* Vai pegar a ultima div(last) e atacar a teg p dentro dela */
+	color: grey;
+}
+
+/* ATAQUE A DIV QUE NÃO SEJA 
+.box div:not(.one) {
+	background-color: grey;/* Ataque todas as divs que não sejam .one
+}
+
+*/
+
+/* INSERIR DEPOIS DO TEXTO **/
+.texto::after { /* Insira depos que terminar o texto-*/
+	content:' Matheus'; /*O contúdo */
+}
+
+/* INSERIR ANTES DO TEXTO **/
+.texto::before { /* Insira depos que terminar o texto-*/
+	content:' O '; /*O contúdo */
+}
+
