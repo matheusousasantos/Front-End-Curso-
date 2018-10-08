@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Aula 09</title>
+	<meta charset="UTF-8">
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+	<form>
+		<fieldset> <!--Grupo de elementos de formuário-->
+			<legend>Meu formulário</legend>
+											<!--Legenda na caixa de texto-->	
+				<div><input type="text" name="nome" placeholder="Digite o seu nome!"></div>
+				<div><input type="text" name="email" placeholder="Digite o seu e-mail!"></div>
+				<div>
+					<select = name="lista"><!-- Cria uma caixa de opção -->
+						<option disabled selected>Qual a sua idade?</option>
+						<option>20</option>
+						<option>25+</option>
+						<option>40+</option>
+					</select>
+					
+				</div><!-- Div sega apenas para ir pra próxima linha -->
+
+				<h2>Qual a sua Cidade?</h2>
+				<div class="input">
+					<!-- No radio precisamos colocar o mesmo nome para cada um para valer a referência-->
+					<div>
+						<input type="radio" name="cidade"><span>São Luis</span>
+					</div>
+
+					<div>
+						<input type="radio" name="cidade"><span>São Paulo</span>
+				   </div>
+
+				   <div>
+						<input type="radio" name="cidade"><span>Rio de Janeiro</span>
+				   </div>
+				</div>
+
+				<h2>O que você gosta de comer?</h2>
+				<div class="input">
+					<!-- No radio precisamos colocar o mesmo nome para cada um para valer a referência-->
+					<div>
+						<input type="checkbox" name="cidade"><span>Fruta</span>
+					</div>
+
+					<div>
+						<input type="checkbox" name="cidade"><span>Fest food</span>
+				   </div>
+
+				   <div>
+						<input type="checkbox" name="cidade"><span>Salada</span>
+				   </div>
+				</div>
+
+				<div>
+					<textarea placeholder="Possui alguma observação?"></textarea><!--Obs: O textarea leva em consideração todo espaçamento e quebra de linha. Por padrão sempre que for criado um textarea não deixe espaçamento na criação:
+						<textarea placeholder="Possui alguma observação?"></textarea>-->
+				</div>
+
+				<div>
+					<input type="submit" name="acao" value="Enviar">
+				</div>
+
+		</fieldset>
+
+	</form>
+
+
+</body>
+</html>
